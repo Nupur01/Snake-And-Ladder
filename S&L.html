@@ -1,0 +1,524 @@
+<html>
+<head>
+	<script>
+	
+		turn="";
+		a=0;
+		m="";
+		function play1(){
+		 f=Math.ceil(Math.random()*6)
+			document.getElementById("x").innerHTML=f;
+		
+			if(turn=="a"){
+				alert("not ur chnce");
+				a=a-f;
+			}
+			else{
+			
+			turn="a";
+			if(f==1){
+			m="start";
+			}
+			if(m=="start"){
+			a=a+f;
+			
+				if(a>100){
+				a=a-f;	
+				}
+				
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.4)";
+				c=a-f;
+				document.getElementById("d"+c.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				if(a==100){
+					alert("PLAYER1 HAVE WIN");
+				}
+				
+				if(a==32){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				a=10;
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==36){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=6;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==48){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=26;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==63){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=18;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==88){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=24;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==95){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=56;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==97){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=78;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==8){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=30;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==4){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=14;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==21){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=42;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==28){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=76;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==50){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=67;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==71){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=92;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==80){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=99;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				if(a==1){
+				document.getElementById("d"+a.toString()).style.backgroundColor="rgba(0,0,0,0)";
+					a=38;
+					document.getElementById("d"+a.toString()).style.backgroundColor="rgba(255,0,255,0.3)";
+				}
+				}
+			
+		}
+		}
+		
+		
+		n=0;
+		me="";
+		function play2(){
+		
+		  f=Math.ceil(Math.random()*6)
+			
+			
+			document.getElementById("x").innerHTML=f;
+			if(turn=="b"){
+				alert("N0T YOUR CHANCE")
+				n=n-f;
+			}
+			else{
+				turn="b";
+				if(f==1){
+			me="start";
+			}
+			if(me=="start"){
+			n=n+f;
+			//document.getElementById("y").innerHTML=a;
+				if(n>100){
+			
+				n=n-f;
+				//document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3))";
+			} 
+			if(n==100){
+				alert("PLAYER2 HAVE WIN");
+			}
+				
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			c=n-f;
+			document.getElementById("d"+c.toString()).style.backgroundColor="rgba(0,0,0,0)";
+			
+			if(n==32){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=10;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==36){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=6;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==48){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=26;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==63){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=18;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==88){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=24;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==95){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=56;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==97){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=78;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==8){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=30;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==4){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=14;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==21){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=42;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==28){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=76;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==50){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=67;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==71){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=92;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==80){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=99;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			if(n==1){
+			document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,0,0,0)";
+				n=38;
+				document.getElementById("d"+n.toString()).style.backgroundColor="rgba(0,255,0,0.3)";
+			}
+			}
+		}
+		
+	}
+	function reset(){
+		window.location.href="S&L.html";
+	}
+		
+	</script>
+	<style>
+	.outer{
+	background-color:hsla(0, 100%, 30%, 0.3);
+	width:100%;
+	height:100%;
+	}
+		.board{
+			width:501;
+			height:501px;
+			margin:auto;
+			
+			background-image:url('snack1.png');
+			background-repeat:no-repeat;
+			border : 1px solid black;
+			
+		}
+		.row1{
+			display:flex;
+			
+		}
+		.r1{
+			width:14%;
+			height:50;
+			border-bottom:1px dotted black;
+			border-right:1px dotted black;
+			padding-top:0px;
+		}
+		.row2{
+			display:flex;
+			
+		}
+		.r2{
+			width:10%;
+			height:49;
+			border-bottom:1px dotted black;
+			border-right:1px dotted black;
+			padding-top:0px;
+		}
+		.row5{
+			display:flex;
+			
+		}
+		.r5{
+			width:10%;
+			height:49;
+			border-bottom:1px dotted black;
+			border-right:1px dotted black;
+			padding-top:0px;
+		}
+		.row3{
+			display:flex;
+			
+		}
+		.r3{
+			width:10%;
+			height:49;
+			border-bottom:1px dotted black;
+			border-right:1px dotted black;
+			padding-top:0px;
+		}
+		.row4{
+			display:flex;
+			
+		}
+		.r4{
+			width:10%;
+			height:49;
+			border-bottom:1px dotted black;
+			border-right:1px dotted black;
+			padding-top:0px;
+		}
+		.row6{
+			display:flex;
+			
+		}
+		.r6{
+			width:10%;
+			height:49;
+			border-bottom:1px dotted black;
+			border-right:1px dotted black;
+			padding-top:0px;
+		}
+		.row7{
+			display:flex;
+			
+		}
+		.r7{
+			width:10%;
+			height:49;
+			border-bottom:1px dotted black;
+			border-right:1px dotted black;
+			padding-top:0px;
+		}
+		.row8{
+			display:flex;
+			
+		}
+		.r8{
+			width:10%;
+			height:49;
+			border-right:1px dotted black;
+			border-bottom:1px dotted black;
+			display:flex;
+			
+		}
+		
+		.row9{
+			display:flex;
+			
+		}
+		.r9{
+			width:10%;
+			height:49;
+			border-right:1px dotted black;
+			border-bottom:1px dotted black;
+			padding-top:0px;
+		}
+		.row10{
+			display:flex;
+			
+		}
+		.r10{
+			width:10%;
+			height:50;
+			border-bottom:1px dotted black;
+			border-right:1px dotted black;
+			padding-top:0px;
+		}
+		#d{
+			width:100;
+			height:50;
+		}
+		.inner{
+			display:flex;
+			padding-left:450;
+			margin:auto;
+		padding-top:40;
+		}
+		.inner div{
+			padding-left:50;
+		}
+		#x{
+		width:100;
+			height:50;
+		border:1px dotted black;
+		background-color:pink;
+		}
+		
+			#p1{
+			width:100;
+			height:50;
+		}
+		.i1{
+		display:flex;
+		}
+	</style>
+</head>
+<body>
+<div class="outer">
+	<div class="board">
+	<div class="row1">
+		<div class="r1"id="d100">100</div>
+		<div class="r1"id="d99">99</div>
+		<div class="r1"id="d98">98</div>
+		<div class="r1"id="d97">97</div>
+		<div class="r1"id="d96">96</div>
+		<div class="r1"id="d95">95</div>
+		<div class="r1"id="d94">94</div>
+		<div class="r1"id="d93">93</div>
+		<div class="r1"id="d92">92</div>
+		<div class="r1"id="d91">91</div>
+	</div>
+	<div class="row2">
+		<div class="r2"id="d81">81</div>
+		<div class="r2"id="d82">82</div>
+		<div class="r2"id="d83">83</div>
+		<div class="r2"id="d84">84</div>
+		<div class="r2"id="d85">85</div>
+		<div class="r2"id="d86">86</div>
+		<div class="r2"id="d87">87</div>
+		<div class="r2"id="d88">88</div>
+		<div class="r2"id="d89">89</div>
+		<div class="r2"id="d90">90</div>
+	</div>
+		<div class="row3">
+		<div class="r3"id="d80">80</div>
+		<div class="r3"id="d79">79</div>
+		<div class="r3"id="d78">78</div>
+		<div class="r3"id="d77">77</div>
+		<div class="r3"id="d76">76</div>
+		<div class="r3"id="d75">75</div>
+		<div class="r3"id="d74">74</div>
+		<div class="r3"id="d73">73</div>
+		<div class="r3"id="d72">72</div>
+		<div class="r3"id="d71">71</div>
+	</div>
+		<div class="row4">
+		<div class="r4"id="d61">61</div>
+		<div class="r4"id="d62">62</div>
+		<div class="r4"id="d63">63</div>
+		<div class="r4"id="d64">64</div>
+		<div class="r4"id="d65">65</div>
+		<div class="r4"id="d66">66</div>
+		<div class="r4"id="d67">67</div>
+		<div class="r4"id="d68">68</div>
+		<div class="r4"id="d69">69</div>
+		<div class="r4"id="d70">70</div>
+	</div>
+		<div class="row5">
+		<div class="r5"id="d60">60</div>
+		<div class="r5"id="d59">59</div>
+		<div class="r5"id="d58">58</div>
+		<div class="r5"id="d57">57</div>
+		<div class="r5"id="d56">56</div>
+		<div class="r5"id="d55">55</div>
+		<div class="r5"id="d54">54</div>
+		<div class="r5"id="d53">53</div>
+		<div class="r5"id="d52">52</div>
+		<div class="r5"id="d51">51</div>
+	</div>
+	<div class="row6">
+		<div class="r6"id="d41">41</div>
+		<div class="r6"id="d42">42</div>
+		<div class="r6"id="d43">43</div>
+		<div class="r6"id="d44">44</div>
+		<div class="r6"id="d45">45</div>
+		<div class="r6"id="d46">46</div>
+		<div class="r6"id="d47">47</div>
+		<div class="r6"id="d48">48</div>
+		<div class="r6"id="d49">49</div>
+		<div class="r6"id="d50">50</div>
+	</div>
+	<div class="row7">
+		<div class="r7"id="d40">40</div>
+		<div class="r7"id="d39">39</div>
+		<div class="r7"id="d38">38</div>
+		<div class="r7"id="d37">37</div>
+		<div class="r7"id="d36">36</div>
+		<div class="r7"id="d35">35</div>
+		<div class="r7"id="d34">34</div>
+		<div class="r7"id="d33">33</div>
+		<div class="r7"id="d32">32</div>
+		<div class="r7"id="d31">31</div>
+	</div>
+		<div class="row8">
+		<div class="r8"id="d21">21</div>
+		<div class="r8"id="d22">22</div>
+		<div class="r8"id="d23">23</div>
+		<div class="r8"id="d24">24</div>
+		<div class="r8"id="d25">25</div>
+		<div class="r8"id="d26">26</div>
+		<div class="r8"id="d27">27</div>
+		<div class="r8"id="d28">28</div>
+		<div class="r8"id="d29">29</div>
+		<div class="r8"id="d30">30</div>
+	</div>
+		<div class="row9">
+		<div class="r9" id="d20">20</div>
+		<div class="r9" id="d19">19</div>
+		<div class="r9" id="d18">18</div>
+		<div class="r9" id="d17">17</div>
+		<div class="r9" id="d16">16</div>
+		<div class="r9" id="d15">15</div>
+		<div class="r9" id="d14">14</div>
+		<div class="r9" id="d13">13</div>
+		<div class="r9" id="d12">12</div>
+		<div class="r9"  id="d11">11</div>
+	</div>
+		<div class="row10">
+		<div class="r10" id="d1">1</div>
+		<div class="r10" id="d2">2</div>
+		<div class="r10" id="d3">3</div>
+		<div class="r10" id="d4">4</div>
+		<div class="r10" id="d5">5</div>
+		<div class="r10" id="d6">6</div>
+		<div class="r10" id="d7">7</div>
+		<div class="r10" id="d8">8</div>
+		<div class="r10" id="d9">9</div>
+		<div class="r10" id="d10">10</div>
+	</div>
+	</div >
+	<div class="inner">
+	<div class="i1"><input type="submit" value="player1" style="background-color:red;" id="d01" onclick="play1()">
+	<div id="x"></div>
+	<input type="submit" value="player2" style="background-color:green;" id="d02" onclick="play2()">
+	<input type="button" value="Reset" style="background-color:grey;" id="d03" onclick="reset()">
+	</div>
+	</div>
+</div>
+</body>
+</html>
